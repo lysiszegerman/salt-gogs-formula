@@ -15,4 +15,3 @@ gogs-config:
         - mode: 644
         - watch_in:
             - service: gogs-running
-        - require: gogs-custom-dir
