@@ -1,9 +1,10 @@
 gogs-custom-dir:
-    - name: /opt/gogs/custom/conf
-    - user: git
-    - group: git
-    - mode: 755
-    - makedirs: True
+    file.directory:
+        - name: /opt/gogs/custom/conf
+        - user: git
+        - group: git
+        - mode: 755
+        - makedirs: True
 
 gogs-config:
     - file.managed:
