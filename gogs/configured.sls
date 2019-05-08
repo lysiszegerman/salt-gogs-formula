@@ -7,7 +7,7 @@ gogs-custom-dir:
         - makedirs: True
 
 gogs-config:
-    - file.managed:
+    file.managed:
         - name: /opt/gogs/custom/conf/app.ini
         - source: salt://gogs/files/gogs-app.ini
         - user: git
