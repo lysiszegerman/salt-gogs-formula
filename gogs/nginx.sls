@@ -41,5 +41,6 @@ gogs-server-default_vhost_absent:
 gogs-nginx-running:
   service.running:
     - service: nginx
+    - name: nginx
     - require:
       - file: /etc/nginx/sites-available/gogs.conf
