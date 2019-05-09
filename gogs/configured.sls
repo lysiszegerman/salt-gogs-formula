@@ -13,5 +13,6 @@ gogs-config:
         - user: git
         - group: git
         - mode: 644
+        - template: jinja
         - watch_in:
             - service: gogs-running
