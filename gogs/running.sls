@@ -8,5 +8,6 @@
 gogs-running:
   service.running:
     - name: gogs
+    - enable: True
     - require:
       - file: /etc/systemd/system/gogs.service
