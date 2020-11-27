@@ -53,4 +53,7 @@ server {
         proxy_no_cache $cookie_session;
         proxy_buffers 32 4k;
     }
+    location /foob {
+        alias /home/lysis/.weechat/xfer;
+    }
 }
